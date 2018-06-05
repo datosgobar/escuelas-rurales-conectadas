@@ -24,7 +24,7 @@ axios
     `https://modernizacion.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20modernizacion.data_1`
   )
   .then(function(response) {
-    console.log('Escuelas conectadas: ', response.data.total_rows)
+    // console.log('Escuelas conectadas: ', response.data.total_rows)
     if (response.data.total_rows != 0) {
       document.getElementById('footer-number-conectadas').innerHTML =
         response.data.total_rows
@@ -39,7 +39,7 @@ axios
     `https://modernizacion.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20modernizacion.data_4`
   )
   .then(function(response) {
-    console.log('Escuelas por conectar: ', response)
+    // console.log('Escuelas por conectar: ', response.data.total_rows)
     if (response.data.total_rows != 0) {
       document.getElementById('footer-number').innerHTML =
         response.data.total_rows
