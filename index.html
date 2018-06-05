@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Escuelas conectadas</title>
+        <link rel="shortcut icon" href="https://argob.github.io/poncho/favicon.ico">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+        <!-- popup -->
+        <div id="popup" class="popup">
+            <div class="popup-structure">
+                <span id="cruz" class="cruz">
+                    <img class="cruz" src="./img/cruz_cierre-01.svg" alt=""> </span>
+                <span class="popup-title">Explorá lo que estamos haciendo</span>
+                <span class="popup-p">El mapa muestra el trabajo del Ministerio de Modernización, mediante ARSAT, para conectar a internet a las
+                    escuelas rurales públicas del país.</span>
+                <span class="popup-info">
+                    <span class="info-container">
+                        <img class="logo-escuela" src="./img/Escuela conectada-01.svg" alt="">
+                        <span class="texto-escuela light-blue">Escuelas conectadas a hoy</span>
+                        <span class="division-bar-popup"></span>
+                        <img class="logo-escuela" src="./img/Escuela no conectada-01.svg" alt="">
+                        <span class="texto-escuela">Escuelas próximas a conectar</span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="close-popup" class="grey-layer"></div>
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-content">
+                    <img class="logo" src="./img/arsat.svg" alt="ARSAT">
+                    <!-- <span class="redes">
+                        <p class="comparti">Compartí</p>
+                        <a href="https://twitter.com/datosgobar" target="_blank" class="pull-right">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/GobAbiertoAR/" target="_blank" class="pull-right">
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </span> -->
+                </div>
+            </div>
+        </nav>
+        <div class="title">
+            Escuelas Rurales Conectadas
+        </div>
+
+        <!-- Carto map -->
+        <iframe id="map" width="100%" height="100%" frameborder="0" src="https://datosgobar.carto.com/u/modernizacion/builder/18e8a6f7-1893-44ee-a4a6-85a4604f8d80/embed"
+            allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <!-- footer -->
+        <footer>
+            <div id="footer-info" class="footer-info">
+                <div class="footer-content">
+                    <div class="conectadas">
+                        <div id="footer-rutas" class="footer-rutas conectadas">Escuelas conectadas a hoy</div>
+                        <div id="footer-number-conectadas" class="numero-conectadas"></div>
+                    </div>
+                    <div class="division-bar"></div>
+                    <div class="por-conectar">
+                        <div id="footer-number"></div>
+                        <div id="footer-rutas" class="footer-rutas">Escuelas próximas a conectar</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
