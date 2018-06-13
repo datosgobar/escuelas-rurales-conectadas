@@ -52,3 +52,6 @@ axios
   .catch(function(error) {
     console.log(error)
   })
+
+parent.document.querySelector('.mapa p').innerHTML =
+  'Desarrollado por <a href="https://datosgobar.github.io/escuelas-rurales-conectadas/" target="_blank">Ministerio de Modernización</a>'
