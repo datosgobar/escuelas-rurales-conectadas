@@ -40,7 +40,7 @@ nav i {
   top: 0px;
 }
 .title {
-  position: absolute;
+  position: fixed;
   top: 80px;
   height: 69px;
   background-color: #f2f6f9;
@@ -322,7 +322,7 @@ footer .numero-conectadas {
   color: #03a9f4;
 }
 footer .footer-rutas {
-  width: 132px;
+  width: 141px;
   margin-left: 17px;
   font-size: 15px;
   font-weight: 400;
